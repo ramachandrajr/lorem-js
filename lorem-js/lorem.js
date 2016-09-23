@@ -69,6 +69,14 @@ var createCollection = function (loremWords, numWords) {
 	return collection;
 }
 
+// This function creates lorem ipsum text of given length.
+var makeLorem = function (elem, loremWords, num) {
+	var myCollection = createCollection(loremWords, num);
+	var goodWords = punctuate(myCollection);
+	// joinAll(words, <delimiter>)
+	elem.innerHTML = joinAll(goodWords, " ");
+}
+
 // This function puts required data into the right elements.
 var putLorem = function (elem) {
 	// Get all classes included in the given element.
@@ -77,15 +85,15 @@ var putLorem = function (elem) {
 	for (var i = 0; i < classes.length; i++) {
 		// If there is a class called large.
 		if (classes[i] === "lg") {
-			elem.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis tristique tellus ullamcorper rhoncus. Morbi at varius est. Aenean mattis dignissim commodo. Morbi pellentesque, erat vitae hendrerit suscipit, velit risus auctor tortor, eu maximus est orci at ipsum. Fusce accumsan fringilla efficitur. Morbi sed ante tellus. Nam dui tellus, accumsan id condimentum et, ullamcorper eu purus. Phasellus lobortis erat pretium, efficitur leo vel, vulputate felis. Curabitur ut nibh neque. Morbi vel ligula id velit dignissim congue eu dapibus justo. Maecenas a lectus neque. Aenean varius metus et felis imperdiet, sit amet venenatis tellus volutpat. Etiam nec ullamcorper mi, vitae facilisis eros. Donec lacinia erat ac rhoncus mattis. ";
+			makeLorem(elem, loremWords, 200);
 		}
 		// If there is a class called medium.
 		else if (classes[i] === "md") {
-			elem.innerHTML = "Phasellus vel metus vulputate, blandit mi vel, pharetra enim. In porttitor, nisi a vulputate aliquet, nunc risus pulvinar diam, vitae sodales leo dui quis enim. Nullam rutrum neque id dolor mollis efficitur.";
+			makeLorem(elem, loremWords, 70);
 		}
 		// If there is a class called small.
 		else if (classes[i] === "sm") {
-			elem.innerHTML = "Mauris feugiat purus sed metus pharetra suscipit. ";
+			makeLorem(elem, loremWords, 20);
 		}
 		// Else if it is the word lo we got nothin to do then.
 		else if (classes[i] === "lo") {
@@ -93,10 +101,13 @@ var putLorem = function (elem) {
 		}
 		// Else if it is a number.
 		else if (typeof(Number(classes[i])) !== NaN) {
+			makeLorem(elem, loremWords, Number(classes[i]) + 1);
+			/*
 			var myCollection = createCollection(loremWords, Number(classes[i]) + 1);
 			var goodWords = punctuate(myCollection);
 			// joinAll(words, <deliiter>)
 			elem.innerHTML = joinAll(goodWords, " ");
+			*/
 		}
 	}
 }
