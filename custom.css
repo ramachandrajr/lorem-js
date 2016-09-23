@@ -36,6 +36,7 @@ p, ol li {
 .jumbotron {
 	padding-top: 50px;
 	background: url('main-bg.jpg');
+	background-position: fixed;
 	background-size: cover;
 	color: white;
 	height: 400px;
