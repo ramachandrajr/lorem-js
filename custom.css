@@ -1,0 +1,72 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+p, ol li {
+	font-size: 17px;
+}
+
+.class1 {
+	color: purple;
+}
+
+.class2 {
+	color: green;
+}
+
+.class3 {
+	color: blue;
+}
+
+.attr {
+	color: red;
+}
+
+.tag {
+	color: red;
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+.navbar-default .navbar-brand {
+}
+
+.jumbotron {
+	padding-top: 50px;
+	background: url('main-bg.jpg');
+	background-size: cover;
+	color: white;
+	height: 400px;
+}
+
+.jumbotron .container {
+	margin-top: 5%;
+	text-align: center;
+}
+
+div.jumbotron div.container p,
+div.jumbotron div.container h1{
+	text-shadow: 0.8px 0.8px 0.8px rgba(0, 0, 0, 0.5); 
+	text-shadow: 0.7px 0.7px 0.7px rgba(0, 0, 0, 0.7); 
+	text-shadow: 0.6px 0.6px 0.6px rgba(0, 0, 0, 0.9); 
+}
+
+.btn {
+	border-radius: 0;
+	margin: 0 10px;
+}
+
+.code {
+	font-size: 18px;
+}
+
+.doc {
+	width: 60%;
+	margin :0 auto;
+}
+
+.footer {
+	padding-bottom: 30px;
+}

@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Lorem-JS</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 <body>
-	<p class="lo sm"> </p>
-	<p class="lo lg"></p>
-	<script type="text/javascript" src="lorem-js/lorem.min.js"></script>
+
+	<!-- NAVBAR
+	============================================================================= -->
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+	
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      </button>
+	
+				<a href="#" class="navbar-brand">Lorem JS</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">				
+			<!--<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Contact</a></li>
+				</ul> -->
+			</div>		
+		</div>	
+	</nav>
+
+	<!-- JUMBOTRON
+	============================================================================= -->
+	 
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Lorem JS</h1>
+        <p class="lead"><strong>Lorem JS</strong> is a easy to use Javascript library which helps include <strong>Lorem Ipsum</strong> text. All of this done just by using just the <strong>Class Names.</strong></p>
+        <div class="buttons">
+        	<a href="https://github.com/ramachandrajr/lorem-js/blob/master/lorem-js/lorem.min.js" class="btn btn-success btn-lg" download="lorem.min.js">Download</a>
+        	<a href="" class="btn btn-danger btn-lg">Documentation</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-1 col-md-offset-2">
+				<h3>Link:</h3>
+			</div>
+			<div class="col-md-8">				
+				<div class="well code">
+					https://github.com/ramachandrajr/lorem-js/blob/master/lorem-js/lorem.min.js
+				</div>
+			</div>
+		</div>   	
+		<hr>
+    </div>
+
+    <div class="doc">
+
+    		<div class="div1">
+    			<!-- Usage -->
+    			<h3>Usage</h3>
+
+    			<p>Always Use the class name <strong>lo</strong> or <strong>lorem</strong> wherever you need lorem.js to output a paragraph for you. You can use any one of them. After the initial class you have to add amongst the  choices:</p>
+    			<ol>
+    				<li><strong>xs</strong> - Two words</li>
+    				<li><strong>sm</strong> - Twenty words</li>
+    				<li><strong>md</strong> - Seventy words</li>
+    				<li><strong>lg</strong> - Two Hundred words</li>
+    				<li><strong>xl</strong> - Three Fifty words</li>
+    				<li><strong>someNumber</strong> - Some number of words</li>
+    			</ol>
+    			<hr>
+
+    			<!-- Tags -->
+    			<h3>Tags</h3>
+
+    			<p>These classes work on the following html tags only:</p>
+    			<ol>
+    				<li><strong>&lt;p&gt;</strong> - Paragraph tags</li>
+    				<li><strong>&lt;span&gt;</strong> - Span tags</li>
+    				<li><strong>&lt;h1&gt; through &lt;h6&gt;</strong> - Heading tags</li>
+    				<li><strong>&lt;div&gt;</strong> - Can be used on a div tag for creating multi-paragraphed lorem ipsum</li>
+    			</ol>
+    			<p>If the class is being used on any other tags, it will result in a console.error message displayed in your developer console and lorem.js will not work on that tag.</p>
+    			<hr>
+
+    			<!-- Examples -->
+    			<h3>Examples</h3>
+
+    			<!-- example 1 -->
+    			<p>1. To get a small paragraph do as follows. This will output a single paragaph with 20 words</p>
+
+    			<div class="well code">
+    				<span class="tag">
+    					&lt;p <span class="attr">class="<span class="class1">lorem</span> <span class="class2">sm</span>"</span>&gt;&lt;/p&gt;
+    				</span>
+				</div>  	
+
+    			<p class="text-center">or</p>
+
+    			<div class="well code">
+    				<span class="tag">
+    					&lt;p <span class="attr">class="<span class="class1">lo</span> <span class="class2">sm</span>"</span>&gt;&lt;/p&gt;
+    				</span>
+				</div>
+
+
+    			<!-- example 2 -->
+    			<p>2. To get a paragraph with custom number of words do as follows. The following will output <strong>'123'</strong> worded paragraph.</p>
+
+    			<div class="well code">
+    				<span class="tag">
+    					&lt;p <span class="attr">class="<span class="class1">lorem</span> <span class="class2">123</span>"</span>&gt;&lt;/p&gt;	
+    				</span>
+				</div>
+
+    			<!-- example 3 -->
+    			<p>3. To get Multiple paragraphs with multiple words do as follows. The following will output 10 paragraphs with 40 words each.</p>
+
+				<div class="well code">
+					<span class="tag">
+						&lt;div <span class="attr">class="<span class="class1">lorem</span> <span class="class2">10</span> <span class="class3">40</span>"</span>&gt;&lt;/div&gt;
+					</span>
+				</div>    
+
+				<h4>Syntax:</h4>	
+
+				<div class="well code">
+					<span class="tag">
+						&lt;div <span class="attr">class="<span class="class1">lorem</span> <span class="class2">numPgraphs</span> <span class="class3">numwords/pgraph</span>"</span>&gt;&lt;/div&gt;
+					</span>
+				</div>    
+
+
+    		</div>
+	    	<hr>
+    </div>
+    <footer>
+    	<p class="footer text-center">
+    		Copyright &copy; Ramachandra Jr. 2016
+    	</p>
+    </footer>
+
+
+
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
